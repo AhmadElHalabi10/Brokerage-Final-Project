@@ -1,0 +1,42 @@
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: transparent;
+  position: fixed;
+}
+
+.navBar .link {
+  color: #ecf0f1;
+  font-size: 20px;
+  text-decoration: solid;
+}
+
+.navBar .link:hover {
+  color: #fcba03;
+  transition: 0.5s;
+  text-decoration: underline;
+}
+
+.navBar-logo {
+  display: flex;
+}
+
+.navBar-logo h3 {
+  align-self: center;
+}
+
+.logo-home {
+  width: 10rem;
+  height: 100%;
+  align-self: auto;
+}
+
+.navBar-listproperties {
+  padding: 10px 20px;
+  color: #ecf0f1;
+  background-color: #1c7388;
+
+  border-radius: 50%;
+}

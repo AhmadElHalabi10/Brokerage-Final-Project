@@ -1,0 +1,94 @@
+.home-hero {
+  height: 100vh;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../../images/heroPhoto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home-diffierentTypeOfProperties {
+  text-align: center;
+  margin: 5% 0;
+}
+
+.home-diffierentTypeOfProperties-p1 {
+  font-size: 18px;
+  color: #808080;
+  margin: 1% 0;
+}
+
+.home-diffierentTypeOfProperties-p2 {
+  font-size: 28px;
+}
+
+.home-products {
+  display: flex;
+  justify-content: space-around;
+}
+
+.home-products-product1,
+.home-products-product2,
+.home-products-product3 {
+  width: 40vh;
+  height: 60vh;
+  background-color: #ecf0f1;
+  border-radius: 0 15%;
+  transform: rotate(-1deg);
+}
+
+.home-products-img {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 15%;
+  background: transparent;
+}
+
+.home-products-numberofproperties {
+  left: 3%;
+  bottom: 10%;
+  padding: 3% 12%;
+  background-color: #1c7388;
+  position: fixed;
+  border-radius: 50px;
+  font-size: 25px;
+  color: #ecf0f1;
+}
+
+.home-products-propertiesYouMayLike:hover {
+  color: #fcba03;
+  transition: 0.5s;
+}
+
+.home-propertiesYouMayLike {
+  margin: 10% 0 5% 0;
+}
+
+.home-propertiesYouMayLike-paragraph {
+  text-align: center;
+}
+
+.home-propertiesYouMayLike-p1 {
+  font-size: 18px;
+  color: #808080;
+  margin: 1% 0;
+}
+
+.home-propertiesYouMayLike-p2 {
+  font-size: 28px;
+}
+
+.home-products {
+  display: flex;
+  justify-content: space-around;
+}
+
+.home-propertiesYouMayLike-products {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}

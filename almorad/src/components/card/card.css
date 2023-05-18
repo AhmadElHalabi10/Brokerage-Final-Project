@@ -1,0 +1,19 @@
+.card {
+  width: 40vh;
+  height: 45vh;
+  background-color: #808080;
+}
+
+.card h3 {
+  display: inline;
+  margin-left: 20px;
+}
+
+.card-features {
+  text-align: center;
+}
+
+.card-features-icon {
+  /* background-image: url(../../images/sleeping.png); */
+  font-size: 10px;
+}

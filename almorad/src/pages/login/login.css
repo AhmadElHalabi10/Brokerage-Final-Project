@@ -1,0 +1,69 @@
+/* .login-image {
+  height: 100vh;
+  position: relative;
+  background-image: url(../../images/loginImage.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.login {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.login-loginbox-title {
+  color: #1c7388;
+  padding-bottom: 50px;
+}
+
+.login-loginbox {
+  /* display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: auto; */
+  padding: 50px 100px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.login-loginbox-input {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 20px;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 4px; */
+}
+
+.login-loginbox-button {
+  display: block;
+  margin-left: 6.5%;
+  width: 100%;
+  padding: 20px 3px;
+  margin-top: 100px;
+  background-color: #1c7388;
+  color: #ecf0f1;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 27px;
+}
+
+.login-loginbox-noaccount {
+  margin-top: 50px;
+  opacity: 80%;
+}
+
+.login-loginbox-signup {
+  font-size: 21px;
+  opacity: 50%;
+  margin-top: 10px;
+}

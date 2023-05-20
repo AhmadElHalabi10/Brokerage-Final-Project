@@ -11,13 +11,13 @@ export default function Footer() {
         </div>
         <div className="footer-container-social-icons"> */}
         <a href="https://www.facebook.com">
-          <FaFacebook className="icon" size={30} />
+          <FaFacebook className="icon" size={50} />
         </a>
         <a href="https://www.twitter.com">
-          <FaTwitter className="icon" size={30} />
+          <FaTwitter className="icon" size={50} />
         </a>
         <a href="https://www.instagram.com">
-          <FaInstagram className="icon" size={30} />
+          <FaInstagram className="icon" size={50} />
         </a>
         {/* </div> */}
       </div>

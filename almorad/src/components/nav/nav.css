@@ -14,13 +14,16 @@
 }
 
 .navBar .link:hover {
-  color: #fcba03;
+  color: #fca510;
   transition: 0.5s;
   text-decoration: underline;
 }
 
 .navBar-logo {
   display: flex;
+  justify-content: space-between;
+  height: 7rem;
+  width: 15%;
 }
 
 .navBar-logo h3 {
@@ -29,8 +32,8 @@
 
 .logo-home {
   width: 10rem;
-  height: 100%;
-  align-self: auto;
+  /* height: 50%; */
+  align-self: center;
 }
 
 .navBar-listproperties {
@@ -39,4 +42,22 @@
   background-color: #1c7388;
 
   border-radius: 50%;
+}
+
+.navBar-nav-middleside {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+}
+
+.navBar-nav-rightside {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+}
+
+.navBar-nav-listproperties {
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: #1c7388;
 }

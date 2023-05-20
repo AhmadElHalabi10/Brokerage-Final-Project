@@ -7,32 +7,38 @@ export default function Nav() {
   return (
     <div className="navBar">
       <Link to="/" className="navBar-logo link">
-        <h3>AlMorad</h3>
         <img src={alMoradLogo} className="logo-home" alt="logo" />
-      </Link>
-      <Link to="/" className="navBar-nav-home link">
-        Home
-      </Link>
 
-      <Link to="buy" className="navBar-nav-buy link">
-        Buy
+        <h3>AlMorad</h3>
       </Link>
+      <div className="navBar-nav-middleside">
+        <Link to="/" className="navBar-nav-home link">
+          Home
+        </Link>
 
-      <Link to="rent" className="navBar-nav-rent link">
-        Rent
-      </Link>
-      <Link to="contact" className="navBar-nav-contact link">
-        Contact
-      </Link>
-      <Link to="admin" className="navBar-nav-adminname link">
-        AdminName123
-      </Link>
-      <Link to="logout" className="navBar-nav-logout link">
-        Logout
-      </Link>
-      <Link to="listproperties" className="navBar-nav-listproperties link">
-        List Properties
-      </Link>
+        <Link to="buy" className="navBar-nav-buy link">
+          Buy
+        </Link>
+
+        <Link to="/rent" className="navBar-nav-rent link">
+          Rent
+        </Link>
+        <Link to="/contact" className="navBar-nav-contact link">
+          Contact
+        </Link>
+        <Link to="/admin" className="navBar-nav-adminname link">
+          AdminName123
+        </Link>
+      </div>
+      <div className="navBar-nav-login-rightside">
+        <Link to="/login" className="navBar-nav-login link">
+          Login
+        </Link>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <Link to="/listproperties" className="navBar-nav-listproperties link">
+          List Properties
+        </Link>
+      </div>
     </div>
   );
 }

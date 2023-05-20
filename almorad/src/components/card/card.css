@@ -1,6 +1,8 @@
 .card {
+  display: flex;
   width: 40vh;
   height: 45vh;
+  margin-bottom: 20vh;
   background-color: #808080;
 }
 
@@ -10,10 +12,15 @@
 }
 
 .card-features {
-  text-align: center;
+  align-self: end;
+  margin-left: 20px;
 }
 
-.card-features-icon {
-  /* background-image: url(../../images/sleeping.png); */
-  font-size: 10px;
+.card-features p {
+  text-align: center;
+  bottom: 0px;
+}
+
+.card-features-p-icon {
+  font-size: 15px;
 }

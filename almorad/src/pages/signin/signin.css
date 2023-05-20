@@ -1,37 +1,27 @@
-/* .login-image {
-  height: 100vh;
-  position: relative;
-  background-image: url(../../images/loginImage.jpg);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-.login {
+.signin {
   display: flex;
   justify-content: center;
   margin-top: 10%;
 }
 
-.login-loginbox-title {
+.signin-signinbox {
+  width: 30%;
+}
+
+.signin-signinbox-title {
   color: #1c7388;
   padding-bottom: 50px;
 }
 
-.login-loginbox {
-  /* display: flex;
-  justify-content: center;
-  align-self: center;
-  margin-top: auto; */
+.signin-signinbox {
   padding: 50px 100px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 50px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+
   text-align: center;
 }
-.login-loginbox-input {
+.signin-signinbox-input {
   display: block;
   width: 100%;
   padding: 20px;
@@ -39,11 +29,9 @@
   border: none;
   border-bottom: 1px solid gray;
   font-size: 20px;
-  /* border: 1px solid #ccc; */
-  /* border-radius: 4px; */
 }
 
-.login-loginbox-button {
+.signin-signinbox-button {
   display: block;
   margin-left: 6.5%;
   width: 100%;
@@ -57,13 +45,14 @@
   font-size: 27px;
 }
 
-.login-loginbox-noaccount {
+.signin-signinbox-noaccount {
   margin-top: 50px;
   opacity: 80%;
 }
 
-.login-loginbox-signup {
+.signin-signinbox-signup {
   font-size: 21px;
   opacity: 50%;
   margin-top: 10px;
+  text-decoration: none;
 }

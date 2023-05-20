@@ -8,8 +8,9 @@ import Buy from "./pages/buy";
 import Rent from "./pages/rent";
 import Contact from "./pages/contact";
 import Admin from "./pages/admin";
-import Login from "./pages/login";
+import SignIn from "./pages/signin";
 import ListProperties from "./pages/listproperties";
+import SignUp from "./pages/signup";
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
             <Route path="/listproperties" element={<ListProperties />} />
           </Route>
 
-          <Route path="/login" element={<Login />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
       </BrowserRouter>
     </div>

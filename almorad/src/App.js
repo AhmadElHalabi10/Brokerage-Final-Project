@@ -4,13 +4,14 @@ import "./App.css";
 
 import Visiter from "./pages/visiter";
 import Home from "./pages/home";
-import Buy from "./pages/buy";
+// import Buy from "./pages/buy";
 import Rent from "./pages/rent";
 import Contact from "./pages/contact";
 import Admin from "./pages/admin";
 import SignIn from "./pages/signin";
 import ListProperties from "./pages/listproperties";
 import SignUp from "./pages/signup";
+import PopUpProduct from "./pages/popupproduct";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Visiter />}>
             <Route path="/" element={<Home />} />
-            <Route path="/buy" element={<Buy />} />
+            {/* <Route path="/buy" element={<Buy />} /> */}
             <Route path="/rent" element={<Rent />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/admin" element={<Admin />} />
@@ -28,6 +29,7 @@ function App() {
 
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/popup" element={<PopUpProduct />} />
         </Routes>
       </BrowserRouter>
     </div>

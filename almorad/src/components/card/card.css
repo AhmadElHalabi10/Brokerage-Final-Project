@@ -3,12 +3,30 @@
   width: 40vh;
   height: 45vh;
   margin-bottom: 20vh;
-  background-color: #808080;
+  background-image: url(../../images/heroPhoto.jpg);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+  text-decoration: none;
+  border: 1px solid black;
+  color: black;
+  /* background-image: url(../../images/heroPhoto.jpg); */
+  /* background-size: auto; */
 }
 
-.card h3 {
+/* .card-image {
+  background-image: url(../../images/heroPhoto.jpg);
+  width: 100vh;
+  height: 100vh;
+} */
+
+.card-features-title {
+  display: none;
+}
+
+.card-features-price {
   display: inline;
-  margin-left: 20px;
+  margin-left: 0%;
 }
 
 .card-features {
@@ -16,11 +34,19 @@
   margin-left: 20px;
 }
 
-.card-features p {
-  text-align: center;
+.card-features-number {
+  /* text-align: center; */
   bottom: 0px;
 }
 
 .card-features-p-icon {
   font-size: 15px;
+}
+
+.card-features-type-static {
+  display: none;
+}
+
+.card-features-price-static {
+  display: none;
 }

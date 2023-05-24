@@ -7,7 +7,22 @@ import { BiNavigation } from "react-icons/bi";
 export default function Home() {
   return (
     <div className="home">
-      <div className="home-hero"></div>
+      <div className="home-hero">
+        <h1 className="home-hero-h1">
+          <span className="home-hero-h1-1">W</span>
+          <span className="home-hero-h1-2">e</span>
+          <span className="home-hero-h1-3">l</span>
+          <span className="home-hero-h1-4">c</span>
+          <span className="home-hero-h1-5">o</span>me to our world of
+          exceptional prope
+          <span className="home-hero-h1-5">r</span>
+          <span className="home-hero-h1-4">t</span>
+          <span className="home-hero-h1-3">i</span>
+          <span className="home-hero-h1-2">e</span>
+          <span className="home-hero-h1-1">s</span>
+          <span className="home-hero-h1-1">.</span>
+        </h1>
+      </div>
       <div className="home-diffierentTypeOfProperties">
         <p className="home-diffierentTypeOfProperties-p1">
           Different Types of properties
@@ -55,16 +70,19 @@ export default function Home() {
         <div className="home-propertiesYouMayLike-products">
           <Card
             price="30000"
+            bedNumber="4"
             space="125"
             description="Lorem ipsum fwef wefw efwe we we fnjdfkefwlkkferfnewfn wje fnewf wle fnwe f jl"
           />
           <Card
             price="40000"
+            bedNumber="3"
             space="135"
             description="Lorem ipsum fwef wefw efwe we we fnjdfkefwlkkferfnewfn wje fnewf wle fnwe f jl"
           />
           <Card
             price="50000"
+            bedNumber="5"
             space="145"
             description="Lorem ipsum fwef wefw efwe we we fnjdfkefwlkkferfnewfn wje fnewf wle fnwe f jl"
           />

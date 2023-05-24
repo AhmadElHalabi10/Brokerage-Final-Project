@@ -21,6 +21,37 @@
 
   text-align: center;
 }
+
+.signin-signinbox-form {
+  position: relative;
+}
+.signin-signinbox-form-closeicon {
+  display: flex;
+  position: absolute;
+  top: -20px;
+  right: -10%;
+
+  color: black;
+}
+
+.signin-signinbox-form-top {
+  display: flex;
+  justify-content: center;
+}
+
+/* .signin-signinbox-input-email {
+  border-top: none !important;
+  border-right: none !important;
+  border-left: none !important;
+  border-bottom: !important;
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 20px;
+} */
 .signin-signinbox-input {
   display: block;
   width: 100%;

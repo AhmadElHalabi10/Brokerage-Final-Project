@@ -5,6 +5,7 @@
   width: 100%;
   background: transparent;
   position: fixed;
+  z-index: 999;
 }
 
 .navBar .link {
@@ -16,7 +17,7 @@
 .navBar .link:hover {
   color: #fca510;
   transition: 0.5s;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .navBar-logo {
@@ -57,7 +58,7 @@
 }
 
 .navBar-nav-listproperties {
-  padding: 1rem;
+  padding: 10px 20px;
   border-radius: 50%;
   background-color: #1c7388;
 }

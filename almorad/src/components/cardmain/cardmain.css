@@ -1,0 +1,48 @@
+.cardmain {
+  display: flex;
+  /* position: absolute; */
+  margin-top: 3vh;
+
+  height: 30vh;
+  width: 150vh;
+  border: 2px solid #ccc;
+}
+
+.cardmain-image {
+  width: 40vh;
+  height: 100%;
+}
+
+.cardmain-information {
+  margin-left: 5vh;
+}
+
+.cardmain-title {
+  font-size: 25px;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+}
+
+.cardmain-place {
+  margin-bottom: 5vh;
+}
+
+.cardmain-feature-bedicon {
+  height: 3vh;
+}
+
+.cardmain-feature-bathicon {
+  height: 3vh;
+}
+
+.cardmain-feature-capacityicon {
+  height: 3vh;
+}
+
+.cardmain-contact {
+  margin-top: 6vh;
+}
+
+.cardmain-contact-price {
+  margin-left: 70vh;
+}

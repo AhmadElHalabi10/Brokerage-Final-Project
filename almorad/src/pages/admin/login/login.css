@@ -1,0 +1,20 @@
+.loginAdmin-left {
+  object-fit: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  background-image: url("/home/ahmad/Desktop/Final-Project/Brokerage-Repository/Brokerage-FinalProject-FrontEnd/almorad/src/images/LoginImage.jpg");
+}
+
+.loginAdmin {
+  position: relative;
+}
+
+.loginAdmin-right {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}

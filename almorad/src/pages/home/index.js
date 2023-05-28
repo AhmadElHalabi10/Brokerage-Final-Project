@@ -1,26 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import "./home.css";
-import ProductCardPhoto from "../../images/heroPhoto.jpg";
+import ProductCardPhoto1 from "../../images/ProductCardPhoto1.jpg";
+import ProductCardPhoto2 from "../../images/ProductCardPhoto2.jpg";
+import ProductCardPhoto3 from "../../images/ProductCardPhoto3.jpg";
+import CardPhoto1 from "../../images/CardPhoto1.jpg";
+import CardPhoto2 from "../../images/CardPhoto2.jpg";
+import CardPhoto3 from "../../images/CardPhoto3.jpg";
+
 import Card from "../../components/card";
 import { BiNavigation } from "react-icons/bi";
 
 export default function Home() {
+  const [searchValue, setSearchValue] = useState("");
+
+  const handleClick = () => {
+    setSearchValue("");
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.keyCode === 13) {
+      setSearchValue("");
+    }
+  };
+
+  const handleChange = (event) => {
+    setSearchValue(event.target.value);
+  };
   return (
     <div className="home">
       <div className="home-hero">
         <h1 className="home-hero-h1">
-          <span className="home-hero-h1-1">W</span>
-          <span className="home-hero-h1-2">e</span>
-          <span className="home-hero-h1-3">l</span>
-          <span className="home-hero-h1-4">c</span>
-          <span className="home-hero-h1-5">o</span>me to our world of
-          exceptional prope
-          <span className="home-hero-h1-5">r</span>
-          <span className="home-hero-h1-4">t</span>
-          <span className="home-hero-h1-3">i</span>
-          <span className="home-hero-h1-2">e</span>
-          <span className="home-hero-h1-1">s</span>
-          <span className="home-hero-h1-1">.</span>
+          Welcome to our world of exceptional
+          <span className="home-hero-h1-1"> properties</span>.
         </h1>
       </div>
       <div className="home-diffierentTypeOfProperties">
@@ -35,7 +46,7 @@ export default function Home() {
         <div className="home-products-product1">
           <img
             className="home-products-img"
-            src={ProductCardPhoto}
+            src={ProductCardPhoto1}
             alt="Hello1"
           />
           <div className="home-products-numberofproperties">3 properties</div>
@@ -43,7 +54,7 @@ export default function Home() {
         <div className="home-products-product2">
           <img
             className="home-products-img"
-            src={ProductCardPhoto}
+            src={ProductCardPhoto2}
             alt="Hello2"
           />
           <div className="home-products-numberofproperties">3 properties</div>
@@ -51,7 +62,7 @@ export default function Home() {
         <div className="home-products-product3">
           <img
             className="home-products-img"
-            src={ProductCardPhoto}
+            src={ProductCardPhoto3}
             alt="Hello3"
           />
           <div className="home-products-numberofproperties">3 properties</div>
@@ -69,22 +80,28 @@ export default function Home() {
         </div>
         <div className="home-propertiesYouMayLike-products">
           <Card
+            className="home-propertiesYouMayLike-products-card1"
+            image={CardPhoto1}
             price="30000"
             bedNumber="4"
             space="125"
-            description="Lorem ipsum fwef wefw efwe we we fnjdfkefwlkkferfnewfn wje fnewf wle fnwe f jl"
+            description="Luxurious villa retreat, blending modern elegance with natural serenity."
           />
           <Card
+            className="home-propertiesYouMayLike-products-card2"
+            image={CardPhoto2}
             price="40000"
             bedNumber="3"
             space="135"
-            description="Lorem ipsum fwef wefw efwe we we fnjdfkefwlkkferfnewfn wje fnewf wle fnwe f jl"
+            description="Stylish urban apartment offering contemporary living in a vibrant locale."
           />
           <Card
+            className="home-propertiesYouMayLike-products-card2"
+            image={CardPhoto3}
             price="50000"
             bedNumber="5"
             space="145"
-            description="Lorem ipsum fwef wefw efwe we we fnjdfkefwlkkferfnewfn wje fnewf wle fnwe f jl"
+            description="A tranquil sanctuary of elegance and comfort, your private villa awaits."
           />
         </div>
       </div>
@@ -100,6 +117,10 @@ export default function Home() {
             type="search"
             placeholder="Type email..."
             className="home-latestoffers-searchbar"
+            value={searchValue}
+            onClick={handleClick}
+            onChange={handleChange}
+            onKeyDown={handleKeyDown}
           />
           <BiNavigation
             className="home-latestoffers-searchbar-navigationicon"

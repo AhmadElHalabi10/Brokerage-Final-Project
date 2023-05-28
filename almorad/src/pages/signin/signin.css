@@ -76,6 +76,11 @@
   font-size: 27px;
 }
 
+.signin-signinbox-button:hover {
+  color: #fcba03;
+  transition: 0.5s;
+}
+
 .signin-signinbox-noaccount {
   margin-top: 50px;
   opacity: 80%;

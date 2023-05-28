@@ -1,21 +1,20 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import "./signin.css";
 import { Link } from "react-router-dom";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
 export default function SignIn() {
-  const history = useNavigate();
+  // const history = useNavigate();
 
-  const goBack = () => {
-    history(-1); // Go back to the previous page using React Router
-    // Alternatively, you can use `window.history` directly:
-    // window.history.back();
-  };
+  // const goBack = () => {
+  //   history(-1); // Go back to the previous page using React Router
+  //   // Alternatively, you can use `window.history` directly:
+  //   // window.history.back();
+  // };
 
   return (
     <div className="signin">
-      {/* <div className="login-image"></div> */}
       <div className="signin-signinbox">
         <form className="signin-signinbox-form">
           <Link to="/contact" className="signin-signinbox-form-closeicon">

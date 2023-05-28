@@ -1,6 +1,6 @@
 .cardmain {
   display: flex;
-  /* position: absolute; */
+  position: relative;
   margin-top: 3vh;
 
   height: 30vh;
@@ -45,4 +45,14 @@
 
 .cardmain-contact-price {
   margin-left: 70vh;
+}
+
+.cardmain-popup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 73.4%;
+  height: 100%;
+  /* opacity: 0.5; */
+  background-color: #000000af;
 }

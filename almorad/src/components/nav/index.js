@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./nav.css";
-import alMoradLogo from "/home/ahmad/Desktop/Final-Project/Brokerage-Repository/Brokerage-FinalProject-FrontEnd/almorad/src/images/alMoradLogo.svg";
+import alMoradLogo from "../../images/alMoradLogo2.png";
 import { Link } from "react-router-dom";
 
 export default function Nav() {
@@ -31,29 +31,28 @@ export default function Nav() {
 
         <h3>AlMorad</h3>
       </Link>
-      <div className="navBar-nav-middleside">
-        <Link to="/" className="navBar-nav-home link">
-          Home
-        </Link>
+      <Link to="/" className="navBar-nav-home link">
+        Home
+      </Link>
 
-        {/* <Link to="buy" className="navBar-nav-buy link">
-          Buy
-        </Link> */}
+      <Link to="/rent" className="navBar-nav-rent link">
+        Rent
+      </Link>
+      <Link to="/listproperties" className="navBar-nav-listproperties link">
+        Buy
+      </Link>
+      <Link to="/contact" className="navBar-nav-contact link">
+        Contact
+      </Link>
 
-        <Link to="/rent" className="navBar-nav-rent link">
-          Rent
-        </Link>
-        <Link to="/contact" className="navBar-nav-contact link">
-          Contact
-        </Link>
-      </div>
+      {/* </div> */}
       <div className="navBar-nav-login-rightside">
         <Link to="/signin" className="navBar-nav-login link">
-          Signin
+          Login
         </Link>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <Link to="/listproperties" className="navBar-nav-listproperties link">
-          Properties List
+        <Link to="/signup" className="navBar-nav-register link">
+          Register
         </Link>
       </div>
     </div>

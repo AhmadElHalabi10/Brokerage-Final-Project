@@ -18,12 +18,15 @@
   text-align: center;
 }
 
-.footer-content h3 {
+/* .footer-content h3 {
   font-size: 1.8rem;
   font-weight: 400;
   text-transform: capitalize;
   line-height: 3rem;
   text-align: center;
+} */
+.footer-content-logo {
+  height: 10vh;
 }
 
 .footer-content p {

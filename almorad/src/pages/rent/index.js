@@ -1,7 +1,12 @@
 import React from "react";
 import "./rent.css";
 import CardMain from "../../components/cardmain";
-import HeroImage1 from "../../images/heroPhoto.jpg";
+import RentProductPhoto1 from "../../images/RentProductPhoto1.jpg";
+import RentProductPhoto2 from "../../images/RentProductPhoto2.jpg";
+import RentProductPhoto3 from "../../images/RentProductPhoto3.jpg";
+import RentProductPhoto4 from "../../images/RentProductPhoto4.jpg";
+import RentProductPhoto5 from "../../images/RentProductPhoto5.jpg";
+
 import HeroImage2 from "../../images/loginImage.jpg";
 
 export default function Rent() {
@@ -9,23 +14,14 @@ export default function Rent() {
     <div className="rent">
       <div className="rent-hero">
         <h1 className="rent-hero-h1">
-          <span className="rent-hero-h1-1">F</span>
-          <span className="rent-hero-h1-2">i</span>
-          <span className="rent-hero-h1-3">n</span>
-          <span className="rent-hero-h1-4">d</span>
-          <span className="rent-hero-h1-5"> y</span>our ideal rental home from
-          our carefully selected colle
-          <span className="rent-hero-h1-5">c</span>
-          <span className="rent-hero-h1-4">t</span>
-          <span className="rent-hero-h1-3">i</span>
-          <span className="rent-hero-h1-2">o</span>
-          <span className="rent-hero-h1-1">n</span>
-          <span className="rent-hero-h1-1">.</span>
+          Find your ideal
+          <span className="rent-hero-h1-1"> rental</span> home from our
+          carefully selected collection.
         </h1>
       </div>
       <div className="rent-cardmains">
         <CardMain
-          HeroImage={HeroImage1}
+          HeroImage={RentProductPhoto1}
           title="Apartment for rent in Halba"
           place="Souk, Halba"
           numberBedRoom="3"
@@ -34,7 +30,7 @@ export default function Rent() {
           price="200"
         />
         <CardMain
-          HeroImage={HeroImage2}
+          HeroImage={RentProductPhoto2}
           title="Apartment for rent in Akkar"
           place="Souk, Bebnin"
           numberBedRoom="4"
@@ -43,7 +39,7 @@ export default function Rent() {
           price="250"
         />
         <CardMain
-          HeroImage={HeroImage2}
+          HeroImage={RentProductPhoto3}
           title="Apartment for rent in Beirut"
           place="Ein el Mrayse, Beirut"
           numberBedRoom="5"
@@ -52,7 +48,7 @@ export default function Rent() {
           price="300"
         />
         <CardMain
-          HeroImage={HeroImage1}
+          HeroImage={RentProductPhoto4}
           title="Apartment for rent in Beirut"
           place="Ein el Mrayse, Beirut"
           numberBedRoom="5"
@@ -61,7 +57,7 @@ export default function Rent() {
           price="300"
         />
         <CardMain
-          HeroImage={HeroImage2}
+          HeroImage={RentProductPhoto5}
           title="Apartment for rent in Beirut"
           place="Ein el Mrayse, Beirut"
           numberBedRoom="5"

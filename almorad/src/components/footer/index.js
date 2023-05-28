@@ -1,5 +1,6 @@
 import "./footer.css";
 import React from "react";
+import LogoFooter from "../../images/alMoradLogo2.png";
 import {
   FaFacebook,
   FaInstagram,
@@ -14,10 +15,10 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <h3>code opacity</h3>
+        <img className="footer-content-logo" src={LogoFooter} />
         <p>
-          Lorem Ipsum dotor,Lorem Ipsum dotor Lorem Ipsum dotor Lorem Ipsum
-          dotor Lorem Lorem Ipsum dotor
+          Find your dream home or ideal investment property with our extensive
+          listings of apartments and lands for sale and rent.
         </p>
         <div className="footer-socials">
           <a>

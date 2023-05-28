@@ -1,12 +1,26 @@
 .contact {
   width: 80%;
+  /* height: 5000px; */
   display: flex;
   justify-items: center;
-  margin-top: 5vh;
-  margin-left: 30vh;
-  margin-bottom: 5vh;
+  margin-top: 10vh;
+  margin-left: 22vh;
+  margin-bottom: 30vh;
   /* box-shadow: 20px 20px 40px rgba(54, 55, 47, 0.3); */
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); */
+}
+
+.contact-bigger {
+  object-fit: cover;
+  height: 100vh;
+  background-image: url(../../images/heroPhoto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  /* position: relative;
+  isolation: isolate; */
 }
 
 input[type="text"],
@@ -36,26 +50,10 @@ textarea {
   color: rgba(28, 115, 136, 1);
 }
 
-.contact-hero-h1-2 {
-  color: rgba(28, 115, 136, 0.8);
-}
-
-.contact-hero-h1-3 {
-  color: rgba(28, 115, 136, 0.7);
-}
-
-.contact-hero-h1-4 {
-  color: rgba(28, 115, 136, 0.6);
-}
-
-.contact-hero-h1-5 {
-  color: rgba(28, 115, 136, 0.5);
-}
-
 .contact-hero {
   object-fit: cover;
-  height: 100vh;
-  background-image: url(../../images/heroPhoto.jpg);
+  height: 80vh;
+  background-image: url(../../images/ContactPhoto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

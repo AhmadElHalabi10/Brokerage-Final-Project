@@ -6,16 +6,11 @@ import { Link } from "react-router-dom";
 export default function Card(props) {
   return (
     <Link to="/listproperties" className="card">
-      <div className="card-image"></div>
+      <img src={props.image} alt="Property" className="card-image" />
       <div className="card-features">
-        <p className="card-features-title">Title: {props.title}</p>
-        <h3 className="card-features-type">
-          <span className="card-features-type-var">{props.type}</span>
-        </h3>
+        {/* <h3 className="card-features-type">{props.type}</h3> */}
 
-        <h3 className="card-features-price">
-          <span className="card-features-price-var">{props.price}</span>
-        </h3>
+        <h3 className="card-features-price">$ {props.price}</h3>
         <p className="card-features-number">
           {props.bedNumber} &nbsp; beds &nbsp;
           <FaBed className="card-features-p-icon" />

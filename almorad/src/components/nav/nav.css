@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  /* left: 8%; */
   width: 100%;
   background: transparent;
   position: fixed;
@@ -23,7 +25,7 @@
 .navBar-logo {
   display: flex;
   justify-content: space-between;
-  height: 7rem;
+  height: 10vh;
   width: 15%;
 }
 
@@ -32,7 +34,7 @@
 }
 
 .logo-home {
-  width: 10rem;
+  height: 8vh;
   /* height: 50%; */
   align-self: center;
 }
@@ -57,8 +59,8 @@
   width: 15%;
 }
 
-.navBar-nav-listproperties {
-  padding: 10px 20px;
-  border-radius: 50%;
+.navBar-nav-register {
+  padding: 6px 14px;
+  border-radius: 50px;
   background-color: #1c7388;
 }

@@ -1,9 +1,9 @@
 .rent-hero {
-  height: 100vh;
+  height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../../images/heroPhoto.jpg);
+  background-image: url(../../images/RentPhoto.jpg);
 
   display: flex;
   justify-content: center;
@@ -26,7 +26,7 @@
   position: absolute;
   inset: 0;
   width: 100%;
-  height: 100%;
+  height: 80%;
   background-color: #000000af;
 }
 
@@ -34,22 +34,6 @@
   color: rgba(28, 115, 136, 1);
 }
 
-.rent-hero-h1-2 {
-  color: rgba(28, 115, 136, 0.8);
-}
-
-.rent-hero-h1-3 {
-  color: rgba(28, 115, 136, 0.7);
-}
-
-.rent-hero-h1-4 {
-  color: rgba(28, 115, 136, 0.6);
-}
-
-.rent-hero-h1-5 {
-  color: rgba(28, 115, 136, 0.5);
-}
-
 .rent-cardmains {
-  margin: 2vh 0 2vh 2vw;
+  margin: 4vh 0 4vh 2vw;
 }

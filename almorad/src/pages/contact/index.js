@@ -12,11 +12,14 @@ export default function Contact() {
     event.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:7000/contactUs", {
-        userName,
-        email,
-        description: subject,
-      });
+      const response = await axios.post(
+        `${process.env.REACT_APP_URL}/contactUs`,
+        {
+          userName,
+          email,
+          description: subject,
+        }
+      );
 
       const data = response.data;
 

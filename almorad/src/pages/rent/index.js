@@ -9,7 +9,7 @@ export default function Rent() {
   useEffect(() => {
     // Fetch data from the API
     axios
-      .get("http://localhost:7000/rentProperty")
+      .get(`${process.env.REACT_APP_URL}/rentProperty`)
       .then((response) => setProperties(response.data.response))
       .catch((error) => console.error(error));
   }, []);

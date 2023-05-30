@@ -9,7 +9,7 @@ export default function ListProperties() {
   useEffect(() => {
     // Fetch data from the API
     axios
-      .get("http://localhost:7000/buyProperty")
+      .get(`${process.env.REACT_APP_URL}/buyProperty`)
       .then((response) => {
         setProperties(response.data.response);
       })

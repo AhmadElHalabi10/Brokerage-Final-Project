@@ -13,12 +13,21 @@ import SignUp from "./pages/signup";
 import PopUpProduct from "./pages/popupproduct";
 import Unauthorized from "./pages/admin/unauthorized/index.js";
 import LoginAdmin from "./pages/admin/login/index.js";
+import Dashboard from "./pages/admin/dashboard";
+import RentDashboard from "../../almorad/src/pages/admin/rentdashboard";
+import BuyDashboard from "/home/ahmad/Desktop/Final-Project/Brokerage-Repository/Brokerage-FinalProject-FrontEnd/almorad/src/pages/admin/buydashboard";
+
 function App() {
   return (
     <div className="app">
       <BrowserRouter>
         <Routes>
-          <Route path="/dashboard/admin" element={<LoginAdmin />} />
+          <Route path="/dashboard/admin" element={<Dashboard />}>
+            <Route path="/dashboard/admin" element={<BuyDashboard />} />
+            <Route path="rent" element={<RentDashboard />} />
+          </Route>
+
+          <Route path="/login" element={<LoginAdmin />} />
 
           <Route
             path="/dashboard/admin/unauthorized"

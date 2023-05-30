@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import "./listproperties.css";
 import CardMain from "../../components/cardmain";
-// import HeroImage1 from "../../images/heroPhoto.jpg";
-// import HeroImage2 from "../../images/loginImage.jpg";
 
 export default function ListProperties() {
   const [properties, setProperties] = useState([]);
 
   useEffect(() => {
     // Fetch data from the API
-    fetch("http://localhost:6000/property")
-      .then((response) => response.json())
-      .then((data) => setProperties(data))
+    axios
+      .get("http://localhost:7000/buyProperty")
+      .then((response) => {
+        setProperties(response.data.response);
+      })
       .catch((error) => console.error(error));
   }, []);
 
@@ -34,15 +35,17 @@ export default function ListProperties() {
         </h1>
       </div>
       <div className="listproperties-cards">
+        {console.log(properties)}
         {properties.map((property, index) => (
           <CardMain
-            HeroImage={property.picture}
+            image={property.image}
             title={property.title}
             place={property.place}
             numberBedRoom={property.numberBedRoom}
             numberBathRooms={property.numberBathRooms}
             capacity={property.capacity}
             price={property.price}
+            key={index} // Add a unique key prop for each property
           />
         ))}
       </div>

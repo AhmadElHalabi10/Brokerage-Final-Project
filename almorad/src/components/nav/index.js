@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./nav.css";
-import alMoradLogo from "../../images/alMoradLogo2.png";
+import alMoradLogo from "../../uploads/alMoradLogo2.png";
 import { Link } from "react-router-dom";
 
 export default function Nav() {

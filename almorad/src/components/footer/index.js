@@ -1,6 +1,6 @@
 import "./footer.css";
 import React from "react";
-import LogoFooter from "../../images/alMoradLogo2.png";
+import LogoFooter from "../../uploads/alMoradLogo2.png";
 import {
   FaFacebook,
   FaInstagram,

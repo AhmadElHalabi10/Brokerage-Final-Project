@@ -5,7 +5,7 @@
 .listproperties-hero {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
-    url(../../images/heroPhoto.jpg);
+    url(../../uploads/heroPhoto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

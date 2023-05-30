@@ -1,7 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import "./contact.css";
 
 export default function Contact() {
+  const [userName, setUserName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [responseMessage, setResponseMessage] = useState("");
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      const response = await axios.post("http://localhost:7000/contactUs", {
+        userName,
+        email,
+        description: subject,
+      });
+
+      const data = response.data;
+
+      if (response.status === 200) {
+        setResponseMessage(data.message);
+      } else {
+        setResponseMessage(data.error);
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setResponseMessage("An error occurred while submitting the form.");
+    }
+  };
+
   return (
     <div>
       <div className="contact-hero">
@@ -13,50 +42,41 @@ export default function Contact() {
       <div className="contact-bigger">
         <div className="contact">
           <div className="contact-container">
-            <form action="/action_page.php">
-              <label htmlFor="fname">First Name</label>
+            <form onSubmit={handleSubmit}>
+              <label htmlFor="username">Username</label>
               <input
                 type="text"
-                id="fname"
-                name="firstname"
+                id="username"
+                name="userName"
                 placeholder="Your name.."
+                value={userName}
+                onChange={(e) => setUserName(e.target.value)}
               />
 
-              <label htmlFor="lname">Last Name</label>
-              <input
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="Your last name.."
-              />
               <label htmlFor="email">Email</label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 placeholder="Your email.."
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
 
-              {/* <label htmlFor="country">Country</label>
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select> */}
-
-              <label for="subject">
-                Subject
-                <textarea
-                  id="subject"
-                  name="subject"
-                  placeholder="Write something.."
-                  style={{ height: "200px" }}
-                ></textarea>
-              </label>
+              <label htmlFor="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style={{ height: "200px" }}
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+              ></textarea>
 
               <input type="submit" value="Submit" />
             </form>
           </div>
+          {responseMessage && <p>{responseMessage}</p>}
         </div>
       </div>
     </div>

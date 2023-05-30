@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./cardmain.css";
-import Bed from "../../images/sleeping.png";
-import Bath from "../../images/bath.png";
-import Capacity from "../../images/capacity.png";
+import Bed from "../../uploads/sleeping.png";
+import Bath from "../../uploads/bath.png";
+import Capacity from "../../uploads/capacity.png";
 
 export default function CardMain(props) {
   const [showPopup, setShowPopup] = useState(false);
@@ -12,7 +12,10 @@ export default function CardMain(props) {
   };
   return (
     <div className="cardmain">
-      <img src={props.picture} className="cardmain-image"></img>
+      <img
+        src={`http://localhost:7000/${props.image}`}
+        className="cardmain-image"
+      ></img>
       <div className="cardmain-information">
         <div className="cardmain-title">{props.title}</div>
         <div className="cardmain-place">{props.place}</div>

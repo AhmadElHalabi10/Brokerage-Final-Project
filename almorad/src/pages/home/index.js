@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./home.css";
-import ProductCardPhoto1 from "../../images/ProductCardPhoto1.jpg";
-import ProductCardPhoto2 from "../../images/ProductCardPhoto2.jpg";
-import ProductCardPhoto3 from "../../images/ProductCardPhoto3.jpg";
-import CardPhoto1 from "../../images/CardPhoto1.jpg";
-import CardPhoto2 from "../../images/CardPhoto2.jpg";
-import CardPhoto3 from "../../images/CardPhoto3.jpg";
+import ProductCardPhoto1 from "../../uploads/ProductCardPhoto1.jpg";
+import ProductCardPhoto2 from "../../uploads/ProductCardPhoto2.jpg";
+import ProductCardPhoto3 from "../../uploads/ProductCardPhoto3.jpg";
+import CardPhoto1 from "../../uploads/CardPhoto1.jpg";
+import CardPhoto2 from "../../uploads/CardPhoto2.jpg";
+import CardPhoto3 from "../../uploads/CardPhoto3.jpg";
 
 import Card from "../../components/card";
 import { BiNavigation } from "react-icons/bi";

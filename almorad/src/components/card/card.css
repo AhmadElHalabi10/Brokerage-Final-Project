@@ -21,15 +21,16 @@
   height: 67%;
 }
 
-.card-image:hover {
+/* .card-image:hover {
   transform: scale(1.5);
   border-radius: 50px;
   transition: transform 0.2s;
-}
+} */
 
 .card-features {
   align-self: end;
   margin-left: 20px;
+  height: 20vh;
 }
 
 .card-features-number {
@@ -39,4 +40,16 @@
 .card-description {
   margin-top: 10px;
   margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 480px) {
+  .card {
+    width: 80vw;
+    margin-bottom: 10vw;
+    height: 100vh;
+  }
+
+  .card-features {
+    margin-bottom: 12vh;
+  }
 }

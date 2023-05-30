@@ -1,7 +1,7 @@
 .home-hero {
   object-fit: cover;
   height: 80vh;
-  background-image: url(../../images/heroPhoto.jpg);
+  background-image: url(../../uploads/heroPhoto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -159,19 +159,105 @@
 }
 
 .home-latestoffers-searchbar-navigationicon {
-  /* position: absolute;
-  left: 64%;
-  top: 95%;
-  size: 40; */
   margin-left: 10px;
   cursor: pointer;
 }
 
-/* .home-propertiesYouMayLike-products-card2 {
-  width: 40vh;
-  height: 45vh;
-  background-image: url(../../images/heroPhoto.jpg);
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-size: 100% 70%;
-} */
+@media only screen and (max-width: 480px) {
+  .home-hero-h1 {
+    width: 80vw;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .home-hero-h1-1 {
+    font-size: 25px;
+  }
+
+  .home-diffierentTypeOfProperties-p1 {
+    font-size: 16px;
+  }
+
+  .home-diffierentTypeOfProperties-p2 {
+    font-size: 20px;
+  }
+
+  .home-products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-products-product1,
+  .home-products-product2,
+  .home-products-product3 {
+    width: 80vw;
+    height: 100vh;
+    margin-bottom: 10vh;
+  }
+
+  .home-propertiesYouMayLike-products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-propertiesYouMayLike-products-card1 {
+    width: 100vw;
+  }
+
+  .card {
+    width: 100vw;
+  }
+
+  .home-propertiesYouMayLike-p1 {
+    font-size: 16px;
+  }
+
+  .home-propertiesYouMayLike-p2 {
+    font-size: 20px;
+  }
+
+  .home-latestoffers-p1 {
+    font-size: 16px;
+  }
+
+  .home-latestoffers-p2 {
+    font-size: 20px;
+  }
+
+  .home-latestoffers-searchbar-container {
+    margin: 0 auto 10% auto;
+    align-items: center;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 50px;
+    width: 80%;
+  }
+
+  .home-latestoffers-searchbar {
+    border: none;
+    outline: none;
+    /* flex: 1; */
+    padding: 5px;
+    font-size: 10px;
+  }
+  .home-latestoffers-searchbar {
+    margin-left: 3vw;
+    /* font-size: 16px; */
+  }
+
+  .home-latestoffers-searchbar {
+    margin-left: 3vw;
+    font-size: 16px;
+  }
+
+  .home-latestoffers-searchbar-navigationicon {
+    width: 6vw;
+    right: 8vw;
+    margin-right: 4vw;
+    position: absolute;
+  }
+
+  .home-latestoffers-searchbar::placeholder {
+    font-size: 18px;
+  }
+}
